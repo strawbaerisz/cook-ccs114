@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: #faf8f3;
+  color: #333;
+}
+
+/* ---------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 80px;
+
+  background: white;
+
+  position: sticky;
+  top: 0;
+}
+
+.logo img {
+  height: 55px;
+ 
+}
+
+nav a {
+  text-decoration: none;
+
+  margin: 0 20px;
+
+  color: #67611b;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #b2ab38;
+}
+
+/* ---------------- */
+
+.hero {
+  height: 520px;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(images/hero.jpg);
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 80px;
+}
+
+.hero-text {
+  width: 450px;
+
+  color: white;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 70px;
+
+  line-height: 70px;
+}
+
+.hero span {
+  color: #efe65c;
+}
+
+.hero p {
+  margin: 25px 0;
+
+  line-height: 30px;
+}
+
+.hero button {
+  padding: 15px 35px;
+
+  border: none;
+
+  background: #8b8a2b;
+
+  color: white;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #6f6e21;
+}
+
+/* ---------------- */
+
+.wave {
+  height: 70px;
+
+  background: white;
+
+  border-radius: 50% 50% 0 0;
+
+  margin-top: -35px;
+}
+
+/* ---------------- */
+
+/* ---------------- */
+
+.recipes {
+  padding: 70px 60px;
+  background: #faf8f3;
+}
+
+.recipes h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 35px;
+}
+
+/* Horizontal Scroll */
+
+.recipe-slider {
+  display: flex;
+  gap: 30px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  padding: 20px 10px;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scrollbar */
+
+.recipe-slider::-webkit-scrollbar {
+  height: 10px;
+}
+
+.recipe-slider::-webkit-scrollbar-thumb {
+  background: #8b8a2b;
+  border-radius: 20px;
+}
+
+.recipe-slider::-webkit-scrollbar-track {
+  background: #e8e4d7;
+}
+
+/* Recipe Card */
+
+.recipe-card {
+  min-width: 280px;
+  max-width: 280px;
+
+  flex-shrink: 0;
+
+  background: white;
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  scroll-snap-align: start;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  padding: 20px 20px 10px;
+
+  font-family: "Playfair Display", serif;
+}
+
+.recipe-card p {
+  padding: 0 20px 20px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ---------------- */
+
+.info {
+  padding: 60px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.card {
+  background: white;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+}
+
+.card div {
+  padding: 25px;
+}
+
+.card h3 {
+  font-family: "Playfair Display";
+
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 20px;
+
+  line-height: 28px;
+}
+
+.card a {
+  color: #777321;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.newsletter {
+  padding: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.newsletter input {
+  padding: 15px;
+
+  border-radius: 30px;
+
+  border: 1px solid #ddd;
+
+  margin: 20px 0;
+}
+
+.newsletter button {
+  padding: 15px;
+
+  border: none;
+
+  background: #7d7a21;
+
+  color: white;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+}
+
+/* ---------------- */
+
+footer {
+  background: #7d7a21;
+
+  padding: 25px;
+
+  text-align: center;
+
+  color: white;
+
+  margin-top: 50px;
+}
