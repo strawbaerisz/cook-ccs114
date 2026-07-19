@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cook | Find Joy in Cooking</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- FONT AWESOME'S AUTO ICON GENERATOR-->
     <link rel="stylesheet" href="style.css" />
+    <!-- MAIN STYLING DOCUMENT-->
   </head>
 
   <body>
@@ -17,7 +23,7 @@
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#recipes">Recipes</a>
+        <a href="#featured_recipe">Featured Recipe</a>
         <a href="#tips">Tips</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -37,7 +43,7 @@
             and connection.
           </p>
 
-          <button>Explore Recipes</button>
+          <a href="#recipes-to-cook" class="hero-button">Explore Recipes</a>
         </div>
         <!-- WAVE DIVIDER-->
         <div class="wave"></div>
@@ -45,39 +51,47 @@
 
       <!-- ABOUT SECTION -->
       <section class="about" id="about">
-        <img src="images/about.jpg" alt="" />
+        <img
+          src="https://images.stockcake.com/public/2/7/c/27c090f6-1e87-496a-a3b8-67e07f75282f_large/rustic-cooking-scene-stockcake.jpg"
+          alt="About Cooking"
+        />
 
         <div class="about-content">
-          <span class="eyebrow">About Cook</span>
+          <span class="eyebrow">About This Hobby</span>
 
           <h2>Cooking is our favorite pasttime.</h2>
 
           <p>
-            COOK began with a simple joy: experimenting in the kitchen, swapping
+            2BSIT-A chose this hobby as this collectively made us happy. Cooking
+            begins with a simple joy. Experimenting in the kitchen, swapping
             tips, and discovering new flavors together. What started as
             casual-recipe sharing among friends turned into a collection of
             dishes we love to revisit whenever we wanat to unwind.
           </p>
 
           <p>
-            We celebrate Filipino comfort food as a hobby- approachable recipes
-            written the way an ate or a tita might guide you, with playful notes
-            and personality touches. Whether you're cooking to relax after a
-            long day or to explore your creative side, the dishes listed in here
-            are meant to bring warmth and fun to your table.
+            This webpage showcases popular food that you can cook when you're a
+            beginner, or recipes that are popular enough to make and try. There
+            is also featured recipes that you can use when you want to impress
+            someone. Just general information on what to expect, or some tips as
+            someone whos starting on the hobby.
           </p>
         </div>
       </section>
-      <!-- RECIPIE SECTION -->
-      <section class="recipes" id="recipes">
-        <h2>Popular Filipino Recipes</h2>
 
-        <p class="subtitle">← Scroll left or right to explore →</p>
+      <!-- RECIPE SECTION -->
+      <section class="recipes" id="recipes-to-cook">
+        <h2>Suggested Food to Cook</h2>
+
+        <p class="subtitle">Scroll left or right to explore</p>
 
         <div class="recipe-slider">
           <!-- SCROLLBAR-->
           <article class="recipe-card">
-            <img src="images/sinigang.png" alt="" />
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.cjH3cwPnQFMupY7UjLKECAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Sinigang na Baboy"
+            />
 
             <h3>Sinigang na Baboy</h3>
 
@@ -85,7 +99,10 @@
           </article>
 
           <article class="recipe-card">
-            <img src="" alt="" />
+            <img
+              src="https://t4.ftcdn.net/jpg/02/75/53/33/360_F_275533369_3ldhripY6HazcTGZrXEGqUBgC1gLs94l.jpg"
+              alt="Chicken Adobo"
+            />
 
             <h3>Chicken Adobo</h3>
 
@@ -96,7 +113,10 @@
           </article>
 
           <article class="recipe-card">
-            <img src="" alt="" />
+            <img
+              src="https://t3.ftcdn.net/jpg/05/20/52/98/360_F_520529830_Dax6hmRs1clsgaJriVJn3W0ZASRg1hea.jpg"
+              alt="Chicken Adobo"
+            />
 
             <h3>Pancit Canton</h3>
 
@@ -104,7 +124,10 @@
           </article>
 
           <article class="recipe-card">
-            <img src="" alt="" />
+            <img
+              src="https://homefoodie.com.ph/uploads/2019/10/Kare%20Kare.jpg"
+              alt="Kare-Kare"
+            />
 
             <h3>Kare-Kare</h3>
 
@@ -112,7 +135,10 @@
           </article>
 
           <article class="recipe-card">
-            <img src="" alt="" />
+            <img
+              src="https://sih.booky.ph/eyJrZXkiOiJibG9nXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIxXC8wM1wvMTYxNzI3MjRcL0ljZWJlcmdzX0ZpbmFsLmpwZyIsImJ1Y2tldCI6ImJvb2t5cmVwb3J0In0="
+              alt="Halo-Halo"
+            />
 
             <h3>Halo-Halo</h3>
 
@@ -120,20 +146,95 @@
           </article>
         </div>
       </section>
+
+      <hr class="divider" />
+
+      <!-- FEATURED RECIPE -->
+      <section class="featured-recipe" id="featured_recipe">
+        <div class="featured-image">
+          <img src="images/Sinigang-na-Baboy.jpg" alt="Sinigang na Baboy" />
+        </div>
+
+        <div class="featured-content">
+          <span class="recipe-tag">FEATURED RECIPE</span>
+
+          <h2>Sinigang na Baboy</h2>
+
+          <p class="recipe-intro">
+            One of the Philippines' most beloved comfort foods, Sinigang na
+            Baboy is known for its rich savory broth and signature sour flavor.
+            It's a hearty meal best enjoyed with steaming hot rice and loved
+            ones around the table.
+          </p>
+
+          <div class="recipe-info">
+            <div>
+              <strong>Prep Time</strong>
+              <p>15 mins</p>
+            </div>
+
+            <div>
+              <strong>Cook Time</strong>
+              <p>45 mins</p>
+            </div>
+
+            <div>
+              <strong>Servings</strong>
+              <p>4–6</p>
+            </div>
+          </div>
+
+          <h3>Ingredients</h3>
+
+          <ul>
+            <li>500g Pork Belly</li>
+            <li>1 Onion</li>
+            <li>2 Tomatoes</li>
+            <li>Radish</li>
+            <li>Eggplant</li>
+            <li>Sitaw</li>
+            <li>Kangkong</li>
+            <li>Sinigang Mix</li>
+          </ul>
+
+          <h3>Directions</h3>
+
+          <ol>
+            <li>Boil pork until tender.</li>
+            <li>Add onion and tomatoes.</li>
+            <li>Mix in the sinigang seasoning.</li>
+            <li>Add vegetables one at a time.</li>
+            <li>Simmer until vegetables are cooked.</li>
+            <li>Serve hot with steamed rice.</li>
+          </ol>
+
+          <a href="#recipes-to-cook" class="featured-button"
+            >View More Recipes</a
+          >
+        </div>
+      </section>
+
+      <hr class="divider" />
       <!-- TIPS SECTION -->
       <section class="tips" id="tips">
         <div class="section-heading">
           <p class="section-tag">TIPS</p>
+
           <h2>Learn & Improve Your Skills</h2>
+
           <p class="section-description">
             Discover simple techniques that make cooking more enjoyable,
             efficient, and rewarding.
           </p>
         </div>
 
-        <div class="tips-grid">
+        <!-- Feature Cards -->
+        <div class="tips-grid" id="tips">
           <article class="tip-card">
-            <img src="images/tips.jpg" alt="Cooking Tips" />
+            <img
+              src="https://img.magnific.com/premium-photo/filipino-kitchen-with-traditional-bamboo-wooden-utensils_1291600-27791.jpg"
+              alt="Cooking Tips"
+            />
 
             <div class="tip-card-content">
               <h3>Cooking Tips</h3>
@@ -148,7 +249,10 @@
           </article>
 
           <article class="tip-card">
-            <img src="images/why-cooking.jpg" alt="Why Cooking" />
+            <img
+              src="https://i.pinimg.com/736x/b5/24/ca/b524ca272ecedef711e55cd16f094089.jpg"
+              alt="Why Cooking"
+            />
 
             <div class="tip-card-content">
               <h3>Why Cooking?</h3>
@@ -159,81 +263,90 @@
                 meaningful experiences.
               </p>
 
-              <a href="#about">Read More →</a>
-            </div>
-          </article>
-
-          <article class="tip-card">
-            <img src="images/why-cooking.jpg" alt="Why Cooking" />
-
-            <div class="tip-card-content">
-              <h3>Why Cooking is a Meaningful Hobby</h3>
-
-              <p>
-                Cooking is more than simply preparing meals—it is a hobby that
-                encourages creativity, patience, and lifelong learning. Every
-                dish you make is a chance to develop practical skills while
-                expressing yourself through flavors, ingredients, and
-                presentation.
-              </p>
-
-              <p>
-                Beyond the kitchen, cooking brings people together. Sharing a
-                homemade meal creates lasting memories with family and friends.
-              </p>
-            </div>
-          </article>
-
-          <article class="tip-card">
-            <img src="images/tips.jpg" alt="Cooking Tips" />
-
-            <div class="tip-card-content">
-              <h3>Cooking Tips</h3>
-
-              <p>
-                Developing good cooking habits starts with practicing kitchen
-                safety and proper food handling. Always hold knives firmly, keep
-                your fingers away from the blade while cutting, and use a stable
-                cutting board to prevent accidents.
-              </p>
-
-              <p>
-                Time management also plays a big role in making cooking
-                enjoyable. Before you begin, prepare and organize all your
-                ingredients, read the recipe carefully, and allow enough time
-                for each step.
-              </p>
+              <a href="#contact">Read More →</a>
             </div>
           </article>
         </div>
+
+        <hr class="divider" />
+        <!-- Blog Article 1 -->
+        <section class="blog-article">
+          <img
+            src="images/why-cooking.jpg"
+            alt="Why Cooking is a Meaningful Hobby"
+          />
+
+          <div class="blog-content">
+            <span>FEATURED ARTICLE</span>
+
+            <h2>Why Cooking is a Meaningful Hobby</h2>
+
+            <p>
+              Cooking is more than simply preparing meals—it is a hobby that
+              encourages creativity, patience, and lifelong learning. Every dish
+              you make is an opportunity to discover new ingredients,
+              techniques, and flavors while expressing yourself through food.
+            </p>
+
+            <p>
+              Beyond the kitchen, cooking strengthens relationships by bringing
+              family and friends together over homemade meals. It creates
+              lasting memories, promotes healthier eating habits, and turns
+              everyday moments into meaningful experiences.
+            </p>
+          </div>
+        </section>
+
+        <hr class="divider" />
+        <!-- Blog Article 2 -->
+        <section class="blog-article reverse">
+          <img src="images/tips.jpg" alt="Essential Cooking Tips" />
+
+          <div class="blog-content">
+            <span>COOKING GUIDE</span>
+
+            <h2>Essential Cooking Tips</h2>
+
+            <p>
+              Developing good cooking habits starts with kitchen safety. Always
+              prepare your ingredients before cooking, use a stable cutting
+              board, and keep your workspace clean and organized.
+            </p>
+
+            <p>
+              Read recipes before starting, taste your food as you cook, and
+              don't be afraid to experiment with herbs and seasonings. Practice
+              and patience are the keys to becoming a more confident home cook.
+            </p>
+          </div>
+        </section>
       </section>
+
       <!-- CONTACT SECTION -->
       <section class="contact-section" id="contact">
-        <h2 class="section-title">Subscribe to our <span>newsletter!</span></h2>
-
+        <h2 class="section-title">
+          Having trouble? <span class="contact-span">Please contact us!</span>
+        </h2>
         <div class="section-content">
           <ul class="contact-info-list">
             <li class="contact-info">
+              <p>
+                <strong>Let's Stir the Pot!</strong>
+                <br />
+                Have a fresh idea, a brand partnership in mind, or a recipe that
+                needs troubleshooting? <br />
+                Don't be a stranger! Drop a line at
+                <span class="contact-span">2BSIT-A_cook@gmail.com</span>. Let's
+                whip up something incredible together.
+              </p>
+            </li>
+            <li class="contact-info">
               <i class="fa-solid fa-location-dot"></i>
-
               <p>Pamantasan ng Cabuyao, Laguna</p>
             </li>
             <li class="contact-info">
-              <i class="fa-solid fa-envelope"></i>
-
-              <p>brewhavencoffee@gmail.com</p>
-            </li>
-
-            <li class="contact-info">
               <i class="fa-solid fa-phone"></i>
-
               <p>(+63) 9070656731</p>
-            </li>
-
-            <li class="contact-info">
-              <i class="fa-solid fa-clock"></i>
-
-              <p>Monday - Saturday: 10:00 AM - 10:00 PM</p>
             </li>
           </ul>
 
@@ -263,6 +376,7 @@
         </div>
       </section>
     </main>
+
     <!-- FOOTER SECTION -->
     <footer>
       <p>
