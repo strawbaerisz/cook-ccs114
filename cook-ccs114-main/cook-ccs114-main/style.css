@@ -929,9 +929,3 @@ textarea.form-input {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--olive-dark);
 }
-
-/* Firefox */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: var(--olive) #f4f1e8;
-}
