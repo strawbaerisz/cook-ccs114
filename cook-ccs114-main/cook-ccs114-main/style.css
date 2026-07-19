@@ -39,6 +39,15 @@ body {
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+.divider {
+  width: 80%;
+  max-width: 1000px;
+  margin: 80px auto;
+  border: 0;
+  border-top: 2px solid #8b8a2b;
+  border-top: 2px solid rgba(139, 138, 43, 0.4);
+}
+
 /* ---------------- */
 
 header {
@@ -99,8 +108,9 @@ nav a:hover::after {
   height: 550px;
 
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("images/foodsss.avif");
+    linear-gradient(rgba(91, 91, 91, 0.5), rgba(91, 91, 91, 0.5)),
+    url("images/heroPage.png");
+
   background-size: cover;
 
   background-position: center;
@@ -186,27 +196,6 @@ nav a:hover::after {
   z-index: 3;
 }
 
-.divider {
-  border: none;
-  height: 1px;
-  background: #d8d3c1;
-  position: relative;
-  margin: 90px auto;
-  width: 90%;
-}
-
-.divider::after {
-  content: "✦";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--cream);
-  color: var(--olive);
-  padding: 0 18px;
-  font-size: 18px;
-}
-
 /* ABOUT STYLING */
 .about {
   padding: 90px 80px;
@@ -271,7 +260,7 @@ nav a:hover::after {
 .recipes {
   padding: 70px 60px;
   background: #faf8f3;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .recipes h2 {
@@ -373,8 +362,8 @@ nav a:hover::after {
 
 /* ---------------- */
 .tips {
-  padding: 100px 80px;
-  background: #ffffff;
+  padding: 50px 40px;
+  background: #faf8f3;
 }
 
 .section-heading {
@@ -673,7 +662,7 @@ nav a:hover::after {
 .contact-section {
   padding: 50px 0 100px;
 
-  background: #faf8f3;
+  background: #ffffff;
 }
 
 .contact-section .section-title {
@@ -771,12 +760,166 @@ footer {
   text-align: center;
 
   color: white;
-
-  margin-top: 50px;
 }
 
 section {
   animation: fadeUp 0.8s ease;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: linear-gradient(180deg, #7d7a21, #67611b);
+
+  color: white;
+
+  padding: 70px 80px 30px;
+}
+
+.footer-top {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1.5fr;
+
+  gap: 70px;
+
+  margin-bottom: 40px;
+}
+
+.footer-brand img {
+  width: 70px;
+
+  margin-bottom: 15px;
+}
+
+.footer-brand h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 34px;
+
+  margin-bottom: 12px;
+
+  margin-right: 160px;
+}
+
+.footer-brand p {
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  max-width: 380px;
+}
+
+.footer-links,
+.footer-contact {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 24px;
+
+  margin-bottom: 20px;
+
+  margin-right: 80px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.85);
+
+  text-decoration: none;
+
+  margin-bottom: 12px;
+
+  margin-right: 80px;
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff4b4;
+
+  transform: translateX(5px);
+}
+
+.footer-contact p {
+  margin-bottom: 14px;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-contact i {
+  width: 24px;
+}
+
+.footer-socials {
+  display: flex;
+
+  gap: 14px;
+
+  margin-top: 18px;
+}
+
+.footer-socials a {
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: white;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+
+  margin-left: 65px;
+}
+
+.footer-socials a:hover {
+  background: #b8b34c;
+
+  transform: translateY(-5px);
+}
+
+.footer hr {
+  border: none;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p:first-child {
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.members {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 14px;
+
+  line-height: 1.8;
 }
 
 @keyframes fadeUp {
